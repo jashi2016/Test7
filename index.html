@@ -1,0 +1,44 @@
+Q. Write a function to check if geekster exists in your array var list = ['geek', 'geekster', 'geeky'];If it exists  add some code to find the index of geekster and remove that item.
+
+var list = ['geek', 'geekster', 'geeky'];
+if(list.includes("geekster")){
+    console.log(list.indexOf("geekster"));
+    list.splice(list.indexOf("geekster"), 1);
+    console.log(list)
+}
+
+
+Q. In how many ways can we loop in an array describe each with an example ?
+Using for loop:
+for (index = 0; index < array.length; index++) {
+    console.log(array[index]);
+}
+Using while loop:
+index = 0;
+array = [ 1, 2, 3, 4, 5, 6 ];
+ 
+while (index < array.length) {
+    console.log(array[index]);
+    index++;
+}
+using forEach method:
+index = 0;
+array = [ 1, 2, 3, 4, 5, 6 ];
+ 
+array.forEach(myFunction);
+function myFunction(item, index)
+{
+    console.log(item);
+}
+
+Q. What is the length of these arraysA. var arr1 = [,,,]; B. var arr2 = new Array(3)C. var arr3 = [1,2,3,4,5]D. var array = [ [1,2,3], [4,5,6]  ];E. var array[0].length = [ [1,2,3], [4,5,6]  ];
+A.3 B.3 C.5 D.2 E.error
+
+Q. Find the index position of b in this array var arr= ['a','b','c','d'];
+var arr= ['a','b','c','d'];
+console.log(arr.indexOf('b'));
+
+Q. Find the nth largest element in a sorted array
+var arr= [1,2,3,4,5];
+var n=prompt();
+console.log(arr[n-1]);
